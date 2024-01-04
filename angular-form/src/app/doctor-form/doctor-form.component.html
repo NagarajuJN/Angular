@@ -1,0 +1,32 @@
+<div class="container">  
+    <h1 style="text-align: center" >Doctor Form</h1>  
+    <form  style="align-items: center;">  
+      <div class="form-group">  
+        <label for="name">Name</label>  
+        <input type="text" class="form-control" id="name" required>  
+      </div>  
+
+      <div class="form-group">  
+        <label for="age">Age</label>  
+        <input type="text" class="form-control" id="agw" required>  
+      </div> 
+      <div class="form-group">  
+        <label for="experience">Year's of xperience</label>  
+        <input type="text" class="form-control" id="experience" required>  
+      </div> 
+
+      <div class="form-group">  
+        <label for="location">Location </label>  
+        <input type="text" class="form-control" id="location" required>  
+      </div> 
+
+  
+      <div class="form-group">  
+        <label for="Specialist">Specialist</label>  
+        <select class="form-control" id="specialist" required>  
+          <option *ngFor="let pow of specialist" [value]="pow">{{pow}}</option>  
+        </select>  
+      </div>  
+      <button type="submit" class="btn btn-success">Submit</button>  
+    </form>  
+</div>  
